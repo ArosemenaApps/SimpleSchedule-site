@@ -24,8 +24,24 @@ and which iOS version you are on usually saves a round trip.</p>
 <h3>How do I publish to a Google calendar?</h3>
 <p>Add your Google account to your iPhone first: Settings → Apps → Calendar → Calendar
 Accounts → Add Account → Google, with Calendars turned on. Then, in Simple Schedule,
-choose that calendar under Settings → Publish To. Your iPhone syncs the events to Google
-on its own.</p>
+choose that calendar under Settings → Default Calendar, or give a template its own
+calendars in the template editor. Your iPhone syncs the events to Google on its own.</p>
+
+<h3>I have a new (or second) iPhone. Where is my schedule?</h3>
+<p>From version 1.1, your templates and scheduled days sync through your private iCloud
+account. Update Simple Schedule on your old iPhone and open it once, so it can move your
+schedule to iCloud. Then open Simple Schedule on the new iPhone, signed in to the same
+Apple Account, and give it a few minutes: your templates and days, past months included,
+arrive on their own. Settings → iCloud shows how syncing is going.</p>
+<p>Your calendar events are already on the new iPhone through your calendar accounts.
+Simple Schedule recognises them instead of publishing them again. The first time, it may
+ask you to confirm which calendar on the new iPhone is "Work — iCloud" (for example) under
+Settings → iCloud → Calendars on This iPhone; it never guesses from a matching name. A day
+marked <strong>Published from your other iPhone</strong> is one it hasn't found in Calendar
+yet. Wait a few minutes and tap <strong>Look Again</strong> on that day. Only choose
+<strong>Publish as a New Event</strong> if the event really isn't in your calendar.</p>
+<p>Each iPhone asks for its own Calendar access, and publishes only when you tap Publish on
+it. Without iCloud, Simple Schedule keeps working on each iPhone separately.</p>
 
 <h3>How do I get "Time to Leave" alerts?</h3>
 <p>Those alerts come from Apple's Calendar app, based on traffic, and Simple Schedule sets
@@ -55,7 +71,9 @@ as they are. Tap Update Calendar to publish the change.</p>
 <h3>Will publishing again create duplicate events?</h3>
 <p>No. Each scheduled day is tied to exactly one calendar event. Publishing again
 updates that event, erasing a day removes it, and days that haven't changed are left
-alone.</p>
+alone. With two iPhones, publish on one, let it sync, then use the other; publishing the
+same brand-new day on both iPhones within the same few minutes, before they've synced, is
+the one way to get two copies.</p>
 
 <h3>Why does Simple Schedule need Full Access to Calendar?</h3>
 <p>iOS's "Add Events Only" option lets an app add events but never read, change or remove

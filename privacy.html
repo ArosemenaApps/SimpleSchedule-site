@@ -13,28 +13,39 @@
 <header>
   <h1>Privacy Policy</h1>
   <p class="lede">Simple Schedule</p>
-  <p class="muted">Effective 27 September 2026 (revised the same day: calendar display and editing, location suggestions)</p>
+  <p class="muted">Effective 10 November 2026 (revised for version 1.1: private iCloud sync between your iPhones). The previous version, effective 27 September 2026, applies to versions 1.0 to 1.0.2, which keep everything on one iPhone.</p>
   <nav><a href="index.html">Home</a><a href="support.html">Support</a></nav>
 </header>
 
 <div class="panel">
   <p><strong>The short version.</strong> Simple Schedule has no account system and no
-  server. Your templates and schedule are stored on your iPhone. Nothing is collected about
-  you, nothing is sold, and nothing is used for advertising. The only place your schedule
-  goes is the calendar on your iPhone that you choose to publish it to.</p>
+  server. Your templates and schedule are stored on your iPhone and, if you're signed in to
+  iCloud, synced to your other iPhones through your own private iCloud account, which
+  Arosemena Apps cannot read. Nothing is collected about you, nothing is sold, and nothing
+  is used for advertising. Besides your iCloud account, the only place your schedule goes is
+  the calendar you choose to publish it to.</p>
 </div>
 
 <h2>What is stored, and where</h2>
-<p>Everything below is stored on your iPhone, in the app's own storage area. It is not
-uploaded to Arosemena Apps, and there is no service to upload it to.</p>
+<p>Everything below is stored on your iPhone, in the app's own storage area. Nothing is
+uploaded to Arosemena Apps, and there is no Arosemena Apps service to upload it to.</p>
+<p>When you're signed in to iCloud, the items marked <em>synced</em> are also kept in
+your private iCloud database (Apple's CloudKit), so the same schedule appears on your other
+iPhones. That data belongs to your Apple Account: it is stored and protected by Apple under
+<a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>, it counts toward
+your iCloud storage, and Arosemena Apps has no access to it. If you're not signed in to
+iCloud, or you turn iCloud off for Simple Schedule in Settings › [your name] › iCloud,
+everything stays on that iPhone and the app works as before.</p>
 
 <table>
   <thead><tr><th>Information</th><th>Why the app has it</th></tr></thead>
   <tbody>
-    <tr><td>Templates you create: name, times, location, notes, color, alert</td><td>So you can place them on your schedule</td></tr>
-    <tr><td>The days you schedule</td><td>Your monthly schedule</td></tr>
-    <tr><td>Which calendar events Simple Schedule created, the calendar you publish to, and the calendars you chose to show</td><td>So it can update or remove its own events without creating duplicates, and show the right calendars</td></tr>
-    <tr><td>Small preferences, such as the last month you viewed</td><td>So the app opens where you left it</td></tr>
+    <tr><td>Templates you create: name, times, location (with map coordinates if you picked a suggestion), notes, color, alert, order <em>(synced)</em></td><td>So you can place them on your schedule</td></tr>
+    <tr><td>The days you schedule, including past months and edits to single days <em>(synced)</em></td><td>Your schedule</td></tr>
+    <tr><td>For each event Simple Schedule published: its date, times, title, the "SimpleSchedule" link it added to the event, and the identifier your calendar account gave the event <em>(synced)</em></td><td>So your other iPhones recognise events already in your calendar and update them instead of adding duplicates</td></tr>
+    <tr><td>The names of the calendars your templates publish to, such as "Work — iCloud" <em>(synced)</em>, and scheduling settings such as "Allow a Template More Than Once per Day" <em>(synced)</em></td><td>So your other iPhones can ask which of their calendars you mean, and behave the same way</td></tr>
+    <tr><td>This iPhone's identifiers for those events and calendars, which calendar on this iPhone you matched each name to, and the calendars you chose to show <em>(this iPhone only)</em></td><td>So it can update or remove its own events, and show the right calendars</td></tr>
+    <tr><td>Small preferences, such as the last month you viewed <em>(this iPhone only)</em></td><td>So the app opens where you left it</td></tr>
   </tbody>
 </table>
 
@@ -49,8 +60,11 @@ set up calendars in Settings. With it, the app:</p>
   <li><strong>Lets you edit or delete</strong> an event yourself, in Apple's standard event
       editor. Simple Schedule never changes your other events on its own.</li>
 </ul>
-<p>Your calendar events are read on your iPhone only. They are not copied into
-Simple Schedule's storage, and nothing from your calendars is sent anywhere by the app.</p>
+<p>Your calendar events are read on your iPhone only. Your other events are never copied
+into Simple Schedule's storage or iCloud, and nothing from your calendars is sent anywhere by
+the app. The events Simple Schedule published sync between your devices through your
+calendar accounts, as they always have. Each iPhone asks for its own Calendar access and
+publishes only when you tap Publish on it.</p>
 <p>Calendars from Google, Exchange, and other accounts are the ones you have added to
 your iPhone in Settings. Those accounts sync the events on their own, under their own
 terms. Simple Schedule never sees your passwords for them and never contacts those
@@ -69,8 +83,9 @@ places first. It is not saved and not sent anywhere by Simple Schedule. Declinin
 nothing else, and you can turn it off at any time in Settings.</p>
 
 <h2>What leaves your iPhone</h2>
-<p>Nothing, except the calendar events you publish, the location text you type (looked up
-with Apple Maps, as described above), and any .ics file you choose to share. There are no analytics, no advertising, no crash reporting
+<p>Nothing, except your synced schedule data in your own private iCloud account (described
+above), the calendar events you publish, the location text you type (looked up with Apple
+Maps, as described above), and any .ics file you choose to share. There are no analytics, no advertising, no crash reporting
 that transmits your content, and no remote configuration. The app contains no
 third-party code.</p>
 
@@ -85,9 +100,14 @@ iCloud or a computer. Those backups are managed by Apple under Apple's terms, no
 this app.</p>
 
 <h2>Deleting your data</h2>
-<p>Deleting the app removes its data from your iPhone. Calendar events it published
-stay in your calendar until you delete them. You can remove them first by erasing the
-days in Simple Schedule and tapping Update Calendar.</p>
+<p>Deleting the app removes its data from that iPhone only. Your synced schedule stays in
+your iCloud account for your other iPhones. To remove it everywhere, either delete your
+templates and erase your days in Simple Schedule while signed in to iCloud (the deletions
+sync), or delete Simple Schedule's data from your iCloud storage in Settings › [your name] ›
+iCloud, where iOS lists the apps using your storage.</p>
+<p>Calendar events Simple Schedule published stay in your calendar until you delete them.
+You can remove them first by erasing the days in Simple Schedule and tapping Update
+Calendar.</p>
 
 <h2>Children</h2>
 <p>Simple Schedule is not directed at children and does not knowingly collect
